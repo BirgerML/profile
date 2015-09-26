@@ -23,7 +23,7 @@ class profile::base_windows {
   }
 
   dsc_xtimezone { 'Oslo':
-    dsc_timezone         => 'W. Europe Standard Tome',
+    dsc_timezone         => 'W. Europe Standard Time',
     dsc_issingleinstance => 'yes',
   }
 
