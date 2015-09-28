@@ -14,6 +14,10 @@ class profile::base_linux {
   class { 'timezone':
     timezone => 'Europe/Oslo',
   }
+  
+  package { $linux_sw_pkg:
+    ensure => latest,
+  }
 
   file { '/root/.ssh/':
     owner  => 'root',
