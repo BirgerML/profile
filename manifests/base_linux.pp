@@ -32,5 +32,6 @@ class profile::base_linux {
     key     => $root_ssh_key,
     require => File['/root/.ssh']
   }
+  include ::profile::monitoring::logstashforwarder
 
 }
