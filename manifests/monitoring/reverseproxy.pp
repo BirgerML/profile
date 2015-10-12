@@ -15,7 +15,7 @@ class profile::monitoring::reverseproxy {
   } ->
   file { '/etc/nginx/ssl/nginx.crt':
     ensure => file,
-    source => 'puppet:///modules/profile/keys/certs/nginx.crt',
+    source => 'puppet:///modules/profile/keys/nginx.crt',
   } ->
   htpasswd { 'data':
     username    => 'data',
