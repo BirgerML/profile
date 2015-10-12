@@ -18,11 +18,7 @@ class profile::base_linux {
   package { $linux_sw_pkg:
     ensure => latest,
   }
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 2c44382411495ae4833232e6a2efb59ed8314dce
   file { '/root/.ssh/':
     owner  => 'root',
     group  => 'root',
