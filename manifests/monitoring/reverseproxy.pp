@@ -41,8 +41,8 @@ class profile::monitoring::reverseproxy {
   }
 
   file { '/etc/nginx/htpasswd.users':
-     owner => www-data,
-     group => www-data,
+     owner => 'www-data',
+     group => 'www-data',
      mode  => 644,
   }
 }
