@@ -33,7 +33,7 @@ class profile::monitoring::elk {
   } ->
   file { '/etc/pki/tls/certs/logstash.crt':
     ensure => file,
-    source => 'puppet:///modules/profile/keys/certs/logstash.crt',
+    source => 'puppet:///modules/profile/keys/logstash.crt',
   } ->
   class { '::logstash':
     autoupgrade  => true,
