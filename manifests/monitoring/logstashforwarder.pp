@@ -1,6 +1,6 @@
 class profile::monitoring::logstashforwarder {
 
-  $logstash_server = hiera('profile::monitorng::logstash_server')
+  $logstash_server = hiera('profile::monitoring::logstash_server')
 
   class { '::logstashforwarder':
     servers     => [ "${logstash_server}" ],
