@@ -34,4 +34,7 @@ class profile::base_linux {
   }
   include ::profile::monitoring::logstashforwarder
 
+  unless $::fqdn == 'monitor.borg.trek' {
+    include ::profile::monitoring::icingaclient
+  }
 }
