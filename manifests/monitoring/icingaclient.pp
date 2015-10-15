@@ -1,5 +1,4 @@
 class profile::monitoring::icingaclient {
-
   $management_if = hiera("profile::interfaces::management")
   $management_ip = getvar("::ipaddress_${management_if}")
 
