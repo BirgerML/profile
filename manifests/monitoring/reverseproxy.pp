@@ -40,4 +40,9 @@ class profile::monitoring::reverseproxy {
     proxy    => 'http://localhost:5601',
   }
 
+  file { '/etc/nginx/htpasswd.users':
+     owner => 'www-data',
+     group => 'www-data',
+     mode  => 644,
+  }
 }
