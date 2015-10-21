@@ -18,7 +18,7 @@ class profile::base_windows {
   }
 
   dsc::lcm_config { 'disable_lcm':
-    refresh_mode => 'Disabled',
+    refresh_mode => 'Push',
     before       => Dsc_xtimezone['Oslo'],
   }
 
